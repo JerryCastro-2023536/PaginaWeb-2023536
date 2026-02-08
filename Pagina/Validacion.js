@@ -1,13 +1,13 @@
-const form = document.getElementById("formulario");
+const formulario = document.getElementById("formulario");
 const user = document.getElementById("usuario");
-const pass = document.getElementById("contrasena");
+const password = document.getElementById("contrasena");
 
-form.addEventListener("submit", () => {
+formulario.addEventListener("submit", () => {
 
-    if (user.value === 'admin' && pass.value === '1234') {
-        alert('Login exitoso');
+    if (user.value === "admin" && password.value === "1234") {
+        alert("Se ha iniciado correctamente");
         window.location.href = "/Pagina/PaginaPrincipal.html";
     } else {
-        alert('Usuario o contraseña incorrectos');
+        alert("Credenciales incorrectas");
     }
 });
